@@ -8,6 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<div align="center">
 <h2>Flight Details of Your Choice</h2>
 <table border="2">
 		<tr>
@@ -17,7 +18,7 @@
 			<th>Date Choosen</th>
 			<th>Airlines</th>
 			<th>Price</th>
-			<th></th>
+			
 		</tr>
 		
 		
@@ -32,6 +33,8 @@
 				
 			</tr>	
 	</table>
+</div>
+<div align="center">
 <h2>Enter Personal Details To Continue</h2>
 
 <form action="paymentservlet" method="post">
@@ -40,19 +43,19 @@
 		<table>
 			<tr>
 				<td>Name</td>
-				<td><input name="name" type="text" /></td>
+				<td><input name="name" type="text" required></td>
 			</tr>
 			<tr>
 				<td>Age</td>
-				<td><input name="age" type ="text"/></td>
+				<td><input name="age" type ="text" required></td>
 			</tr>
 			<tr>
 				<td>Aadhaar Number</td>
-				<td><input name="aadharNo" type="text"/></td>
+				<td><input name="aadharNo" type="text" required></td>
 			</tr>
 			<tr>
 				<td>Contact Number</td>
-				<td><input name="contactNo" type="text"/></td>
+				<td><input name="contactNo" type="text" required></td>
 			</tr>
 			<tr>
 				<td></td>
@@ -62,5 +65,6 @@
 
 
 	</form>
+</div>
 </body>
 </html>

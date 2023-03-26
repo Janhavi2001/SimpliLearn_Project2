@@ -7,13 +7,14 @@
 <title>Insert title here</title>
 </head>
 <body>
+<div align="center">
 <table border="2">
 		<tr>
 			<th>Name</th>
 			<th>Age</th>
 			<th>AadharNo</th>
 			<th>ContactNo</th>
-			<th></th>
+			
 		</tr>
 		
 	
@@ -35,5 +36,6 @@
 	<input type="hidden" name="person" value="${personalDetails.person}" />
 	<input type="submit" value="Proceed to Payment">
 	</form>
+</div>
 </body>
 </html>

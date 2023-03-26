@@ -22,6 +22,7 @@ public class ChangePasswordServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	@Resource(name = "jdbc/mydb")
 	private DataSource datasource;
+	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		this.datasource=datasource;
 		Connection connection = null;
@@ -32,8 +33,10 @@ public class ChangePasswordServlet extends HttpServlet {
 		String newpassword=request.getParameter("newpassword");
 		String username=request.getParameter("username");
 		String password=request.getParameter("password");
+		
 		try {
 			connection = this.datasource.getConnection();
+		
 		String sql = "update admin set password=? where username=? and password=?";
 		preparedstatement = connection.prepareStatement(sql);
 		preparedstatement.setString(1, newpassword);
@@ -59,10 +62,13 @@ public class ChangePasswordServlet extends HttpServlet {
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/AdminLoginPage.jsp");
 		dispatcher.include(request, response);
 		out.println("<br>");
-		out.println("<br>Password Updated Successfully");
+		out.println("<br><div align=center>Password Updated Successfully</div>");
 		
 	}
-
+	
+		
+		
+	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		doGet(request, response);

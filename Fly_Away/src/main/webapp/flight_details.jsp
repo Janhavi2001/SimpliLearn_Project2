@@ -9,7 +9,7 @@
 </head>
 <body>
 
-
+<div align="center">
 <table border="2">
 		<tr>
 			<th>FlightId</th>
@@ -33,6 +33,6 @@
 		
 	</table>
 	
-
+</div>
 </body>
 </html>

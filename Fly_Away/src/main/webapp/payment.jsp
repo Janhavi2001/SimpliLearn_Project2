@@ -7,32 +7,35 @@
 <title>Insert title here</title>
 </head>
 <body>
+<div align="center">
 <%
 int price=RegisterPage.flightPrice;
 int person=Integer.parseInt(request.getParameter("person"));
 out.println("Number Of persons entered= "+person+"<br>");
 out.println("Price of flight per person= "+price+"<br>");
-out.println("Amount to Pay= "+price*person+"<br>");
+out.println("Amount to Pay= Rs "+price*person+"<br>");
 out.println("<br>");
 %>
+</div>
+<div align="center">
 <form action="final.html" method="post">
 <table>
 
 			<tr>
 				<td>Card No</td>
-				<td><input name="cardno" type="text" /></td>
+				<td><input name="cardno" type="text" required></td>
 			</tr>
 			<tr>
 				<td>Name On Card</td>
-				<td><input name="nameoncard" type ="text"/></td>
+				<td><input name="nameoncard" type ="text" required></td>
 			</tr>
 			<tr>
-				<td>Date Of Expiry</td>
-				<td><input name="expiry" type="date"/></td>
+				<td>Card Expiry date</td>
+				<td><input name="expiry" type="date" required></td>
 			</tr>
 			<tr>
 				<td>Cvv</td>
-				<td><input name="cvv" type="text"/></td>
+				<td><input name="cvv" type="text" required></td>
 			</tr>
 			<tr>
 				<td></td>
@@ -40,5 +43,6 @@ out.println("<br>");
 			</tr>
 		</table>
 		</form>
+</div>
 </body>
 </html>

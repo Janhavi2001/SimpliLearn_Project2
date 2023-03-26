@@ -7,14 +7,25 @@
 <title>Insert title here</title>
 </head>
 <body>
+<div align="center">
 <h2>Admin HomePage</h2>
 	<form action="changePassword.jsp" method="post" >
 		<input type="submit" value="Change Password"/>
 	</form><br>
 
-<br><a href="SourceList">Master List of Sources</a><br>	
-<br><a href="DestinationList">Master List of Destinations</a><br>
-<br><a href="AirLineList">Master List of AirLines</a><br>	
-<br><a href="FlightDetails">Master List of Flights with details</a>	
+<br><form action="SourceList">
+Master List of Sources: <input type="submit" value="view" />
+</form>
+<br><form action="DestinationList">
+Master List of Destinations: <input type="submit" value="view" />
+</form>
+<br><form action="AirLineList">
+Master List of AirLines: <input type="submit" value="view" />
+</form>
+<br><form action="FlightDetails">
+Master List of Flights with details: <input type="submit" value="view" />
+</form>
+
+</div>
 </body>
 </html>

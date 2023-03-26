@@ -7,16 +7,17 @@
 <title>Insert title here</title>
 </head>
 <body>
+<div align="center">
 <h2>Login Credentials Required</h2>
 	<form action="AdminServlet" method="post">
 		<table>
 			<tr>
 				<td>User Name</td>
-				<td><input name="name" type="text" ></td>
+				<td><input name="name" type="text" required></td>
 			</tr>
 			<tr>
 				<td>Password</td>
-				<td><input name="password" type ="password" ></td>
+				<td><input name="password" type ="password" required></td>
 			</tr>
 			
 				<td><input type="submit" value="Login" /></td>
@@ -36,5 +37,6 @@
 		</tr>
 	</table>
 	</form>
+</div>
 </body>
 </html>

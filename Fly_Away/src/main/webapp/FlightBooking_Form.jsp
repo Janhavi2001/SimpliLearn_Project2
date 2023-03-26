@@ -7,34 +7,34 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<div align="center" >
 <h2>Enter Details to continue</h2>
 	<form action="bookingservlet" method="post">
 		<table>
 			<tr>
 				<td>Date Of Travel</td>
-				<td><input name="date" type="date" ></td>
+				<td><input name="date" type="date" required ></td>
 			</tr>
 			<tr>
 				<td>Source</td>
-				<td><input name="source" type ="text" ></td>
+				<td><input name="source" type ="text" required></td>
 			</tr>
 			<tr>
 				<td>Destination</td>
-				<td><input name="destination" type="text" ></td>
+				<td><input name="destination" type="text" required></td>
 			</tr>
 			<tr>
 				<td>Number of Person</td>
-				<td><input name="person" type="text"></td>
+				<td><input name="person" type="text" required></td>
 			</tr>
 			<tr>
-				<td></td>
+				
 				<td><input type="submit" value="Next" /></td>
 			</tr>
 		</table>
 
 
 	</form>
-
+</div>
 </body>
 </html>

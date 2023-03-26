@@ -11,15 +11,15 @@
 		<table>
 		<tr>
 				<td>Enter UserName</td>
-				<td><input name="username" type="text" ></td>
+				<td><input name="username" type="text" required></td>
 			</tr>
 			<tr>
 				<td>Enter Old Password</td>
-				<td><input name="password" type="password" ></td>
+				<td><input name="password" type="password" required></td>
 			</tr>
 			<tr>
 				<td>Enter New Password</td>
-				<td><input name="newpassword" type ="password" ></td>
+				<td><input name="newpassword" type ="password" required></td>
 			</tr>
 			<tr>
 				<td><input type="submit" value="Save" /></td>

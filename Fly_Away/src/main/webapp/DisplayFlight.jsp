@@ -9,7 +9,7 @@
 </head>
 <body>
 
-
+<div align="center">
 <table border="2">
 		<tr>
 			<th>FlightId</th>
@@ -38,6 +38,6 @@
 	</table>
 	<br>
 	<a href="AdminLoginPage.jsp">Back</a>
-
+</div>
 </body>
 </html>

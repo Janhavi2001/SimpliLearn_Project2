@@ -1,6 +1,7 @@
 package com.flyaway.controller;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Date;
 import java.util.List;
 
@@ -16,6 +17,7 @@ import javax.sql.DataSource;
 
 import com.flyaway.model.Flight;
 import com.flyaway.utils.FlightDataUtil;
+
 
 @WebServlet("/bookingservlet")
 public class BookingServlet extends HttpServlet {
@@ -33,12 +35,15 @@ public class BookingServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		
 		String date = request.getParameter("date");
 		String source = request.getParameter("source");
 		String destination = request.getParameter("destination");
 		int person = Integer.parseInt(request.getParameter("person"));
 		List<Flight> search = fdu.search(date, source, destination,person);
+		
 		request.setAttribute("Search",search);
+		
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/flight_details.jsp");
 		dispatcher.forward(request, response);
 	}

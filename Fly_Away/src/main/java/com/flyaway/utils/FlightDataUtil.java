@@ -24,6 +24,7 @@ public class FlightDataUtil {
 		Flight flight = null;
 		PreparedStatement preparedstatement = null;
 		ResultSet resultSet=null;
+		
 		try {
 			connection = this.datasource.getConnection();
 			String sql = "select FlightId,AirLine, Price ,Available_dates from flights where Available_dates = ? and Flight_Source = ? and Destination= ?";
@@ -41,6 +42,7 @@ public class FlightDataUtil {
 				flight = new Flight(flightid, dateUtil, airline, price,person);
 				list.add(flight);
 			}
+			
 
 		} catch (Exception e) {
 			e.printStackTrace();

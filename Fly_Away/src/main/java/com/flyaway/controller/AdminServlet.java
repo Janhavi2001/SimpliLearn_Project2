@@ -62,7 +62,7 @@ public class AdminServlet extends HttpServlet {
 			else {
 				RequestDispatcher dispatcher = request.getRequestDispatcher("/AdminHomePage.jsp");
 				dispatcher.include(request, response);
-				out.println("Invalid Credentials");
+				out.println("<br><div align=center><SPAN style=color:red> Invalid Credentials !!!</SPAN></div>");
 			}
 		}
 		catch (Exception e) {
